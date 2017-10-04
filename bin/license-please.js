@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*********************/
-/* licence-please.js */
+/* license-please.js */
 /*********************/
 
 var path = require('path')
@@ -17,12 +17,12 @@ var defaultName = '<NAME>'
 
 program
   .version(pkg.version)
-  .description('Simple CLI to easily generate a LICENCE file')
-  .option('-l, --list', 'List existing licences')
-  .option('-f, --force', 'Rewrite existing LICENCE')
-  .option('-m, --model [model]', 'Choose a licence model', 'mit')
-  .option('-y, --year [year]', 'Year for MIT licence', defaultYear)
-  .option('-n, --name [name]', 'Name for MIT licence', defaultName)
+  .description('Simple CLI to easily generate a LICENSE file')
+  .option('-l, --list', 'List existing licenses')
+  .option('-f, --force', 'Rewrite existing LICENSE')
+  .option('-m, --model [model]', 'Choose a license model', 'mit')
+  .option('-y, --year [year]', 'Year for MIT license', defaultYear)
+  .option('-n, --name [name]', 'Name for MIT license', defaultName)
   .parse(process.argv)
 
 /**
@@ -37,12 +37,12 @@ program.parse(process.argv)
 
 var list = program.list
 var force = program.force
-var licence = program.model
+var license = program.model
 var year = program.year
 var name = program.name
 
 if (program.args.length > 0) return program.help()
-if (list && (force || licence != 'mit')) return program.help()
+if (list && (force || license != 'mit')) return program.help()
 
 var readmePlease = require(path.join('../lib'))
-readmePlease(list, force, licence, year, name)
+readmePlease(list, force, license, year, name)
