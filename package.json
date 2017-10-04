@@ -1,0 +1,30 @@
+{
+  "name": "licence-please",
+  "version": "1.0.0",
+  "description": "Simple CLI to easily generate a LICENCE file",
+  "keywords": [
+    "licence",
+    "generator",
+    "template",
+    "terminal"
+  ],
+  "preferGlobal": "true",
+  "author": "Pierre Charles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierrechls/licence-please"
+  },
+  "bugs": {
+    "url": "https://github.com/pierrechls/licence-please/issues"
+  },
+  "homepage": "https://github.com/pierrechls/licence-please#readme",
+  "main": "lib/index.js",
+  "bin": {
+    "licence-please": "bin/licence-please.js"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "path": "^0.12.7"
+  }
+}
