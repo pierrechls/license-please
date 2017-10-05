@@ -1,6 +1,6 @@
 {
   "name": "license-please",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CLI to easily generate a LICENSE file",
   "keywords": [
     "license",
