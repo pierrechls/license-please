@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/badge/version-1.0.0-green.svg?style=flat-square)](https://github.com/pierrechls/readme-please)
+[![version](https://img.shields.io/badge/version-1.0.1-green.svg?style=flat-square)](https://github.com/pierrechls/readme-please)
 
 # license-please
 
